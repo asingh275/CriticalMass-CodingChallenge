@@ -24,7 +24,7 @@ const makeItemElement = (item) => {
 
   const name = document.createTextNode(item.name);
   const description = document.createTextNode(item.description);
-  const price = document.createTextNode(item.price);
+  const price = document.createTextNode("$" + item.price.toFixed(2));
 
   nameElem.appendChild(name);
   descriptionElem.appendChild(description);
