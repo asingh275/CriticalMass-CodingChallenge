@@ -2,8 +2,8 @@ body {
   padding: 2em;
   margin: 0;
   font-family: sans-serif;
-  border-left: 4em solid rgb(108, 147, 102);
-  border-right: 4em solid rgb(192, 30, 46);
+  border-left: 5em solid rgb(108, 147, 102);
+  border-right: 5em solid rgb(192, 30, 46);
 }
 
 h1 {
@@ -39,6 +39,20 @@ section {
   padding-left: 2em;
 }
 
+.hide {
+  display: none;
+}
+
+.disclaimers {
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+}
+
+#spicy-options {
+  font-family: Verdana;
+}
+
 .spicy:before {
   width: 16px;
   height: 16px;
@@ -49,4 +63,15 @@ section {
   padding-right: 5px;
   position: relative;
   top: 2px;
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #starters {
+    grid-column: 1 / span 2;
+  }
 }

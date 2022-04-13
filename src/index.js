@@ -50,3 +50,14 @@ Object.keys(categories).forEach((type) => {
     parent.appendChild(makeItemElement(item));
   });
 });
+
+const spicyOptions = () => {
+  const spicyItems = document.getElementsByClassName("spicy");
+
+  for (let item of spicyItems) {
+    item.classList.toggle("hide");
+  }
+};
+
+const spicyCheckbox = document.getElementById("spicy-options");
+spicyCheckbox.addEventListener("change", spicyOptions);
