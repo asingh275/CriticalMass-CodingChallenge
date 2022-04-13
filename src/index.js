@@ -17,21 +17,24 @@ menuItems.forEach((item) => {
 
 const makeItemElement = (item) => {
   const itemDiv = document.createElement("div");
+  itemDiv.classList.add("items");
 
   const nameElem = document.createElement("h3");
+  const priceElem = document.createElement("h3");
   const descriptionElem = document.createElement("p");
-  const priceElem = document.createElement("p");
+
+  priceElem.classList.add("price");
 
   const name = document.createTextNode(item.name);
-  const description = document.createTextNode(item.description);
   const price = document.createTextNode("$" + item.price.toFixed(2));
+  const description = document.createTextNode(item.description);
 
   nameElem.appendChild(name);
-  descriptionElem.appendChild(description);
   priceElem.appendChild(price);
+  descriptionElem.appendChild(description);
 
   itemDiv.innerHTML +=
-    nameElem.outerHTML + descriptionElem.outerHTML + priceElem.outerHTML;
+    nameElem.outerHTML + priceElem.outerHTML + descriptionElem.outerHTML;
 
   if (item.spicy) {
     itemDiv.classList.add("spicy");

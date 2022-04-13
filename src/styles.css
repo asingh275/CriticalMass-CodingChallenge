@@ -1,5 +1,42 @@
 body {
+  padding: 2em;
+  margin: 0;
   font-family: sans-serif;
+  border-left: 4em solid rgb(108, 147, 102);
+  border-right: 4em solid rgb(192, 30, 46);
+}
+
+h1 {
+  text-align: center;
+  font-family: Lucida Console;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+h2 {
+  font-family: Verdana;
+  text-align: center;
+}
+
+h3 {
+  display: inline;
+  color: rgb(192, 30, 46);
+}
+
+section {
+  margin: 1em;
+  padding: 1em;
+}
+
+.items {
+  padding: 1em;
+}
+
+.price {
+  position: relative;
+  display: inline;
+  color: rgb(108, 147, 102);
+  padding-left: 2em;
 }
 
 .spicy:before {
@@ -9,7 +46,7 @@ body {
   background-image: url("../assets/spicy.svg");
   background-repeat: no-repeat;
   display: inline-block;
-  padding-right: 3px;
+  padding-right: 5px;
   position: relative;
   top: 2px;
 }
